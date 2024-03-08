@@ -1,4 +1,67 @@
 *, *::after, *::before{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100vw;
+    background-color: rgb(70, 84, 122);
+    background-image: url(../images/Epic_The_Musical_Trojan_Horse.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.navbar{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(15, 15, 15);
+    font-size: 3.5rem;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.navbar > a{
+    color: white;
+    text-decoration: none;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.navbar > a:hover{
+    background-color: rgb(35, 35, 35);
+}
+
+main{
+    background-color: rgb(155, 177, 177);
+}
+
+.briefDiscription, .beginning, .process, .songs, .themes{
+    padding: 3rem;
+    font-size: 1.5rem;
+}
+
+.beginningFlex > img{
+    height: 10vw;
+    width: 10vw;
+    border-radius: 0.5rem;
+}
+
+.beginningFlex{
+    display: flex;
 }
 
