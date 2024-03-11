@@ -4,55 +4,74 @@
     padding: 0;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
+
+
+:root{
+    --navbar-color: rgba(20, 20, 20, 0.8);
+    --background-color:rgb(67, 66, 87);
+    --font-color: rgb(188, 189, 168);
 }
 
-header{
-    width: 100vw;
-    background-color: rgb(70, 84, 122);
+body{
+    height: 200vh;
     background-image: url(../images/Epic_The_Musical_Trojan_Horse.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white;
-    height: 35vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4rem;
-    font-weight: bold;
 }
+
 
 .navbar{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(15, 15, 15);
-    font-size: 3.5rem;
+    position: sticky;
+    top: 0;
+    height: 10vh;
     display: flex;
-    justify-content:space-evenly;
-}
-
-.navbar > a{
     color: white;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--navbar-color);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar > .projectTitle{
+    position: relative;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar > .projectTitle > span{
+    color: rgb(13, 112, 107);
+}
+
+.navbar > ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+.navbar > ul > li  a{
     text-decoration: none;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    color: white;
 }
 
-.navbar > a:hover{
-    background-color: rgb(35, 35, 35);
-}
 
-main{
-    background-color: rgb(155, 177, 177);
+
+main{    
+    margin-left: 5vw;
+    margin-right: 5vw;
+    
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--font-color);
 }
 
 .briefDiscription, .beginning, .process, .songs, .themes{
     padding: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .beginningFlex > img{
